@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "All rights reserved"
+
+[[mods]]
+modId = "re_ma_narf"
+version = "1.0.0"
+displayName = "Mystical Agriculture Nerf"
+authors = "nekotori_haru"
+description = '''
+Mystical Agricultureのエッセンスドロップ率を10%に調整するModです。
+'''
+
+# 依存関係: Forge本体
+[[dependencies.re_ma_narf]]
+modId = "forge" # ここを固定
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+# 依存関係: Minecraft本体
+[[dependencies.re_ma_narf]]
+modId = "minecraft" # ここを固定
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+
+# 依存関係: Mystical Agriculture
+[[dependencies.re_ma_narf]]
+modId = "mysticalagriculture"
+mandatory = true
+versionRange = "[7.0.0,)"
+ordering = "AFTER"
+side = "BOTH"

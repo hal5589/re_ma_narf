@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.nekotori_haru.re_ma_narf.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "re_ma_narf.refmap.json",
+  "mixins": [
+    "mamixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
